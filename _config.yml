@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Xiaoqi
 middle_name: 
 last_name: Qin
-contact_note: >
+contact_note:
 
 description: >
   Undergraduate researcher interested in World-Action Models (WAMs) that jointly learn video prediction and robot control for generalizable embodied intelligence
