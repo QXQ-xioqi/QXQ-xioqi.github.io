@@ -9,8 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>South China University of Technology</p>
-    <p>Guangzhou, China</p>
 
 selected_papers: false
 social: true
