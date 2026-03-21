@@ -5,7 +5,6 @@ title: CV
 nav: true
 nav_order: 2
 cv_pdf: /assets/pdf/CV_XiaoqiQin.pdf
-cv_format: rendercv
 toc:
   sidebar: left
 ---
