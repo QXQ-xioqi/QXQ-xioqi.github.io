@@ -27,20 +27,16 @@
       institution: Peking University, Prof. Hao Tang's Lab (Remote)
       year: Oct 2025 - Present
       description:
-        - "Building multi-view video world models with consistent cross-perspective synthesis, targeting NeurIPS 2026."
-        - "Constructed the full training pipeline end-to-end: game data preprocessing (frame extraction, camera parameter conversion, action encoding, clip segmentation), model adaptation to the training framework, and distributed LoRA fine-tuning of a 14B-parameter DiT model."
-        - "LoRA configuration: rank 32, 560 target modules (attention q/k/v/o + FFN + camera injector), 205M trainable parameters (1.1% of total), trained with DeepSpeed ZeRO-2 on 8×H20 GPUs."
-        - "Resolved a series of engineering challenges including Plücker embedding format mismatches, VAE/T5 device management for non-standard modules, timestep tensor shape inconsistencies, and control_type/control_dim configuration issues."
-        - "Code-level understanding of DiT architecture internals: patch embedding, self/cross-attention, AdaLN modulation, MoE dual-model structure, flow matching training (velocity prediction, sigma schedule with shift transform)."
-        - "Read and compared multi-view generation approaches (MultiGen, PERSIST, ShareVerse), analyzed trade-offs across 2D memory, 3D voxel state, and cross-agent attention paradigms to inform the project's technical direction."
-        - "Successfully reproduced multi-GPU inference (4-GPU FSDP + Ulysses sequence parallelism) for 81-frame 480×832 video generation."
+        - "Working on multi-view video world models, targeting NeurIPS 2026 submission."
+        - "Built the complete fine-tuning pipeline for a 14B-parameter action-conditioned video generation model: game data preprocessing, model adaptation to training framework, and LoRA fine-tuning on 8×H20 GPUs."
+        - "Surveyed multi-view generation approaches (MultiGen, PERSIST, ShareVerse) and presented comparative analysis at group meetings to inform the project's technical direction."
 
 - title: Research Interests
   type: nested_list
   contents:
     - title: Video World Models
       items:
-        - Multi-view consistent video generation with geometric conditioning across perspectives.
+        - Multi-view consistent video generation with geometric conditioning.
     - title: World-Action Models (WAMs)
       items:
         - Jointly modeling video and actions via video diffusion for generalizable robot policy learning.
@@ -53,19 +49,19 @@
   contents:
     - title: Programming
       items:
-        - "Python, PyTorch (proficient with large codebases: 10K–20K lines)"
-    - title: Deep Learning
+        - Python, PyTorch
+    - title: Video World Models
       items:
-        - "Diffusion / DiT architectures, flow matching, video generation models, LoRA fine-tuning, Mixture-of-Experts"
-    - title: Distributed Training
-      items:
-        - "DeepSpeed ZeRO-2, FSDP, Ulysses sequence parallelism, gradient checkpointing, mixed precision (bf16)"
+        - Understanding of DiT architecture, action-conditioned video generation, LoRA fine-tuning concepts
     - title: Data Engineering
       items:
-        - "Video preprocessing (OpenCV), camera parameter conversion (Euler angles → transformation matrices → intrinsics), action encoding, frame-annotation alignment"
-    - title: Tools & Infrastructure
+        - Video preprocessing pipelines (frame extraction, downsampling, camera pose conversion)
+    - title: Infrastructure
       items:
-        - "Linux, multi-GPU server administration (8×H20 96GB), tmux, Git, HuggingFace ecosystem, accelerate, PEFT, safetensors"
+        - "Multi-GPU server operation (8×H20 96GB), Linux, tmux, SSH, Git, HuggingFace model/dataset usage"
+    - title: AI-Assisted Development
+      items:
+        - Proficient in leveraging AI tools (Claude Code) to accelerate prototyping and navigate large codebases
 
 - title: Awards
   type: time_table
@@ -75,10 +71,3 @@
       year: Sep 2025
       description:
         - "Awarded to top undergraduate students nationwide; 10,000 CNY."
-
-- title: Selected Readings
-  type: list
-  contents:
-    - "Video world models: LingBot-World (code-level), MultiGen, PERSIST, ShareVerse (paper-level with technical presentations)."
-    - "World-Action Models: DreamZero, DreamGen, FLARE, UWM — video diffusion backbones for robot policy learning."
-    - "Embodied AI: Dreamer series, JEPA, Cosmos, 3D/spatial world models."
