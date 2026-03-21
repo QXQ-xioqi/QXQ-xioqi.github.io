@@ -5,7 +5,7 @@ permalink: /
 subtitle: Undergraduate Researcher in World Models & Embodied AI
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic3.jpg
   image_circular: false
   more_info: >
 selected_papers: false
