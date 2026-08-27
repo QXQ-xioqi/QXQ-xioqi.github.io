@@ -1,164 +1,125 @@
 ---
 layout: default
 ---
-<div class="research-home">
-  <section id="bio" class="home-section home-hero" aria-labelledby="home-title">
-    <div class="home-hero-copy">
-      <p class="home-eyebrow">Video world models · World-Action Models · Embodied AI</p>
+<div class="academic-home">
+  <section id="home" class="academic-intro" aria-labelledby="home-title">
+    <div class="intro-copy">
       <h1 id="home-title">Xiaoqi Qin <span>秦筱淇</span></h1>
-      <p class="home-email">qinxiaoqi1024 at gmail dot com</p>
-      <p class="home-thesis">I build generative models that remember, predict, and respond to action.</p>
-      <p class="home-bio">
-        I am a third-year undergraduate in Mechatronics Engineering at
+      <p>
+        Hi! I am a third-year undergraduate in Mechatronics Engineering at
         <a href="https://www.scut.edu.cn/en/">South China University of Technology</a>. I am currently a research intern in
-        <a href="https://ha0tang.github.io/">Prof. Hao Tang's group</a> at Peking University, working on generative world models and embodied
-        intelligence.
+        <a href="https://ha0tang.github.io/">Prof. Hao Tang's group</a> at Peking University.
       </p>
-      <p class="home-bio">
-        My current focus is map-conditioned multi-view first-person world modeling: enabling a large video model to maintain a coherent world across
-        viewpoints, react to actions, and generate stable long-horizon rollouts.
+      <p>
+        My research focuses on <strong>video world models</strong>, <strong>World-Action Models</strong>, and embodied intelligence. I am especially
+        interested in building generative models that preserve a coherent world across viewpoints, remember spatial context, and respond to actions
+        over long horizons.
       </p>
-      <div class="home-links" aria-label="Profile links">
-        <a href="{{ '/assets/pdf/CV_XiaoqiQin.pdf' | relative_url }}"><i class="fa-solid fa-file-lines"></i> CV</a>
-        <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}"><i class="fa-solid fa-diagram-project"></i> Project</a>
-        <a href="https://github.com/xiaoqi-qin"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="mailto:qinxiaoqi1024@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
-      </div>
-      <div class="home-availability"><span></span> Based in Guangzhou · Open to 6–12 month in-person research roles</div>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="mailto:qinxiaoqi1024@gmail.com">Email</a>
+        <a href="{{ '/assets/pdf/CV_XiaoqiQin.pdf' | relative_url }}">CV</a>
+        <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Project</a>
+        <a href="https://github.com/xiaoqi-qin">GitHub</a>
+        <a href="https://x.com/XiaoqiQ1024">X</a>
+      </nav>
+      <p class="research-opening">
+        I am based in Guangzhou and open to 6–12 month in-person research roles in world models, robot learning, and embodied AI.
+      </p>
     </div>
 
-    <figure class="home-portrait">
+    <figure class="academic-portrait">
       <img src="{{ '/assets/img/pic3.jpg' | relative_url }}" alt="Portrait of Xiaoqi Qin">
     </figure>
   </section>
 
-  <section id="news" class="home-section" aria-labelledby="news-title">
-    <div class="section-heading">
-      <p>Updates</p>
-      <h2 id="news-title">News</h2>
-    </div>
-    <ol class="home-news-list">
+  <section id="research" class="academic-section" aria-labelledby="research-title">
+    <h2 id="research-title">Research</h2>
+    <p>I study how large generative models can become persistent and interactive world simulators. My current work connects three problems:</p>
+    <ul class="research-directions">
+      <li><strong>World-Action Models:</strong> predicting future visual states conditioned on user or agent actions.</li>
+      <li><strong>Persistent spatial memory:</strong> retaining map-level context beyond a short video window.</li>
       <li>
-        <time datetime="2026-08">2026/08</time>
-        <p>The project page and manuscript for our multi-view interactive world model are in preparation.</p>
+        <strong>Multi-view world consistency:</strong> maintaining a stable shared world under rapid motion, viewpoint changes, and long rollouts.
+      </li>
+    </ul>
+  </section>
+
+  <section id="news" class="academic-section" aria-labelledby="news-title">
+    <h2 id="news-title">News</h2>
+    <ol class="compact-list news-list">
+      <li>
+        <time datetime="2026-08">Aug 2026</time>
+        <p>Project page and manuscript for our multi-view interactive world model are in preparation.</p>
       </li>
       <li>
-        <time datetime="2026-02">2026/02</time>
+        <time datetime="2026-02">Feb 2026</time>
         <p>Joined <a href="https://ha0tang.github.io/">Prof. Hao Tang's group</a> at Peking University as a research intern.</p>
       </li>
       <li>
-        <time datetime="2025-09">2025/09</time>
+        <time datetime="2025-09">Sep 2025</time>
         <p>Received the National Scholarship for Undergraduates from the Ministry of Education of China.</p>
-      </li>
-      <li>
-        <time datetime="2024-09">2024/09</time>
-        <p>Started my B.Eng. in Mechatronics Engineering at SCUT.</p>
       </li>
     </ol>
   </section>
 
-  <section id="research" class="home-section" aria-labelledby="research-title">
-    <div class="section-heading">
-      <p>Selected work</p>
-      <h2 id="research-title">Research</h2>
-    </div>
-    <p class="section-intro">
-      I am interested in models that connect video generation, persistent spatial memory, and action-conditioned interaction.
-    </p>
-
-    <article class="research-card">
-      <div class="research-visual" role="img" aria-label="Diagram of multi-view world modeling with shared map memory">
-        <div class="research-view-grid" aria-hidden="true">
-          <div class="research-view research-view-a"><span>View A</span></div>
-          <div class="research-view research-view-b"><span>View B</span></div>
-          <div class="research-memory"><span>Shared Map Memory</span></div>
-        </div>
-        <div class="research-metrics">
-          <span>14B Video DiT</span>
-          <span>16× H200</span>
-          <span>Long horizon</span>
-        </div>
-      </div>
-
-      <div class="research-copy">
-        <div class="research-status"><span></span> Ongoing · manuscript in preparation</div>
+  <section id="project" class="academic-section" aria-labelledby="project-title">
+    <h2 id="project-title">Selected Project</h2>
+    <article class="project-entry">
+      <a class="project-thumbnail" href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}" aria-label="Open the project overview">
+        <span class="mini-views" aria-hidden="true">
+          <span class="mini-view mini-view-left"></span>
+          <span class="mini-view mini-view-right"></span>
+          <span class="mini-memory">Map Memory</span>
+        </span>
+      </a>
+      <div class="project-description">
         <h3>
           <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Map-Conditioned Multi-View Interactive World Modeling</a>
         </h3>
-        <p class="research-context">Peking University · Advised by Prof. Hao Tang</p>
+        <p class="project-meta">Peking University · Prof. Hao Tang's Group · Ongoing</p>
         <p>
-          We adapt <em>LingBot-World</em>, a 14B action-conditioned video Diffusion Transformer, to highly dynamic CS:GO scenes with rapid camera
-          motion and abrupt visual changes. The system targets synchronized viewpoints, a stable shared world state, complex interaction, and
-          long-horizon generation.
+          We adapt <em>LingBot-World</em>, a 14B action-conditioned video Diffusion Transformer, to highly dynamic CS:GO scenes. Our system targets
+          synchronized viewpoints, a stable shared world, complex interaction, and long-horizon generation.
         </p>
-        <ul>
-          <li>Designed a residual Map Memory conditioning adapter with LoRA.</li>
-          <li>Built the end-to-end synchronized multi-view data and evaluation pipeline.</li>
-          <li>Trained and debugged distributed experiments on a 16× NVIDIA H200 cluster.</li>
-        </ul>
-        <div class="research-actions">
-          <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">project overview</a>
+        <p>
+          I designed a residual Map Memory adapter with LoRA, built the synchronized multi-view data and evaluation pipeline, and trained and debugged
+          distributed experiments on 16× NVIDIA H200 GPUs.
+        </p>
+        <p class="project-links">
+          <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Project overview</a>
+          <span>/</span>
           <a href="{{ '/assets/pdf/CV_XiaoqiQin.pdf' | relative_url }}">CV</a>
-        </div>
+          <span>/</span>
+          <span>Manuscript in preparation</span>
+        </p>
       </div>
     </article>
   </section>
 
-  <section id="background" class="home-section" aria-labelledby="background-title">
-    <div class="section-heading">
-      <p>Training</p>
-      <h2 id="background-title">Background</h2>
-    </div>
-    <div class="background-grid">
-      <article class="background-column">
-        <h3>Experience</h3>
-        <div class="timeline-item">
-          <time>Feb 2026 — Present</time>
-          <div>
-            <h4>Research Intern</h4>
-            <p><a href="https://www.pku.edu.cn/">Peking University</a> · Prof. Hao Tang's Group</p>
-            <p>Video world models, map memory, and multi-view interactive generation.</p>
-          </div>
+  <section id="background" class="academic-section" aria-labelledby="background-title">
+    <h2 id="background-title">Background</h2>
+    <div class="background-list">
+      <article class="background-item">
+        <time>2026 — Present</time>
+        <div>
+          <h3>Research Intern, Peking University</h3>
+          <p>Video world models, Map Memory, and multi-view interactive generation in Prof. Hao Tang's group.</p>
         </div>
       </article>
-
-      <article class="background-column">
-        <h3>Education</h3>
-        <div class="timeline-item">
-          <time>Sep 2024 — Jun 2028</time>
-          <div>
-            <h4>B.Eng. in Mechatronics Engineering</h4>
-            <p><a href="https://www.scut.edu.cn/en/">South China University of Technology</a></p>
-            <p>GPA 3.90/4.00 · IELTS 7.5</p>
-          </div>
+      <article class="background-item">
+        <time>2024 — 2028</time>
+        <div>
+          <h3>B.Eng. in Mechatronics Engineering, SCUT</h3>
+          <p>GPA 3.90/4.00 · IELTS 7.5</p>
+        </div>
+      </article>
+      <article class="background-item">
+        <time>2025</time>
+        <div>
+          <h3>National Scholarship for Undergraduates</h3>
+          <p>Ministry of Education of China.</p>
         </div>
       </article>
     </div>
-  </section>
-
-  <section id="honors" class="home-section" aria-labelledby="honors-title">
-    <div class="section-heading">
-      <p>Recognition</p>
-      <h2 id="honors-title">Honors</h2>
-    </div>
-    <div class="honor-row">
-      <time>2025</time>
-      <div>
-        <h3>National Scholarship for Undergraduates</h3>
-        <p>Ministry of Education of China · Awarded to top undergraduate students nationwide.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="opportunities" class="home-section home-opportunities" aria-labelledby="opportunities-title">
-    <div>
-      <p class="home-eyebrow">What I am looking for</p>
-      <h2 id="opportunities-title">Research opportunities</h2>
-      <p>
-        I am based in Guangzhou and am looking for a long-term research assistant position or research internship in video world models, World-Action
-        Models, or embodied AI. I can commit to a 6–12 month in-person role.
-      </p>
-    </div>
-    <a class="opportunity-cta" href="mailto:qinxiaoqi1024@gmail.com">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
   </section>
 </div>

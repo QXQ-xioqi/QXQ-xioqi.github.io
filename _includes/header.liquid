@@ -2,7 +2,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.home_nav %}
-        <a class="navbar-brand title home-brand" href="#bio">Xiaoqi Qin</a>
+        <a class="navbar-brand title home-brand" href="#home">Home</a>
       {% elsif page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
@@ -37,11 +37,10 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% if page.home_nav %}
-            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
             <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
             <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
-            <li class="nav-item"><a class="nav-link" href="#honors">Honors</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ '/cv/' | relative_url }}">CV</a></li>
           {% else %}
             {% for site_page in site.pages %}
