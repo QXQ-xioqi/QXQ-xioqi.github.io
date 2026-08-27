@@ -1,10 +1,14 @@
 {
   "basics": {
     "name": "Xiaoqi Qin",
-    "label": "Sophomore Undergraduate Student in Mechatronics Engineering",
+    "label": "Third-Year Undergraduate Student in Mechatronics Engineering",
     "email": "qinxiaoqi1024@gmail.com",
     "url": "https://qxq-xioqi.github.io",
-    "summary": "Research interests: World models and embodied intelligence. Highlights: End-to-end, hands-on experience building a multi-view video world model on top of lingbot-world (a 14B, DiT-based, action-conditioned video diffusion model) on 16×H200 GPUs—owning the data-and-conditioning pipeline and the adapter/LoRA model-adaptation training within a collaborative research team.",
+    "summary": "Third-year undergraduate at SCUT and research intern in Prof. Hao Tang's group at Peking University. My primary interests are video world models, World-Action Models (WAM), interactive and long-horizon video generation, and embodied AI.",
+    "location": {
+      "city": "Guangzhou",
+      "countryCode": "CN"
+    },
     "profiles": [
       {
         "network": "GitHub",
@@ -31,36 +35,37 @@
   ],
   "work": [
     {
-      "name": "Peking University — Supervisor: Prof. Hao Tang",
+      "name": "Peking University",
       "position": "Research Intern",
       "location": "Beijing, China",
       "url": "https://ha0tang.github.io/",
       "startDate": "2026-02",
       "endDate": "",
       "highlights": [
-        "Research Topic: Multi-view first-person video world models—building on lingbot-world (a 14B, DiT-based, action-conditioned video diffusion model) with an explicit Map Memory spatial condition to generate cross-view-consistent Counter-Strike gameplay.",
-        "Data pipeline: Built and scaled the end-to-end data pipeline that transforms raw gameplay recordings into the model's Map Memory conditioning signals.",
-        "Model training: Implemented and trained the model-adaptation stack—a residual conditioning adapter that injects the Map Memory signal into the DiT backbone, together with LoRA fine-tuning—realizing an explicitly map-grounded approach to multi-view-consistent world modeling.",
-        "Literature & direction: Surveyed multi-view generation approaches (MultiGen, Multiworld, Gamma-world, MIRA) to inform the project's technical direction."
+        "Co-developed a multi-view first-person interactive world model for highly dynamic CS:GO scenes by adapting LingBot-World, a 14B action-conditioned video DiT; achieved synchronized views with cross-view consistency, a stable world state, complex action-conditioned interaction, and long-horizon generation.",
+        "Designed and trained a residual Map Memory conditioning adapter with LoRA for the 14B model; ran and debugged distributed experiments on a 16× NVIDIA H200 GPU cluster, diagnosing failures across the data, training, and systems stack.",
+        "Built the end-to-end data and evaluation pipeline from raw gameplay recordings to synchronized multi-view clips and Map Memory conditions, covering spatial grounding, cross-view consistency, world stability, and long-horizon behavior."
       ]
     }
   ],
   "skills": [
     {
       "name": "Programming",
-      "keywords": ["Python", "PyTorch"]
+      "keywords": ["Python", "PyTorch", "C++"]
     },
     {
-      "name": "Video World Models",
-      "keywords": ["DiT-based action-conditioned video diffusion", "LoRA fine-tuning", "lingbot-world model family"]
+      "name": "Generative and World Models",
+      "keywords": [
+        "Diffusion Transformers (DiT)",
+        "Action-conditioned video generation",
+        "Multi-view world modeling",
+        "Conditioning adapters",
+        "LoRA fine-tuning"
+      ]
     },
     {
-      "name": "Infrastructure",
-      "keywords": ["Multi-GPU server operation (16×H200)", "Linux", "SSH", "tmux", "Git", "HuggingFace"]
-    },
-    {
-      "name": "AI-Assisted Development",
-      "keywords": ["Claude Code / Codex for accelerating prototyping"]
+      "name": "Research Engineering",
+      "keywords": ["Distributed multi-GPU training", "Data pipelines", "Linux", "SSH", "tmux", "Git", "Hugging Face"]
     }
   ],
   "awards": [
@@ -74,7 +79,7 @@
   "interests": [
     {
       "name": "Research Interests",
-      "keywords": ["World models", "Embodied intelligence"]
+      "keywords": ["Video World Models", "World-Action Models", "Interactive and Long-Horizon Video Generation", "Embodied AI"]
     }
   ]
 }

@@ -4,7 +4,7 @@
     - name: Name
       value: Xiaoqi Qin
     - name: Title
-      value: Sophomore Undergraduate Student in Mechatronics Engineering
+      value: Third-Year Undergraduate Student in Mechatronics Engineering
     - name: Email
       value: qinxiaoqi1024@gmail.com
     - name: Website
@@ -18,9 +18,9 @@
   type: map
   contents:
     - name: Research Interests
-      value: World models and embodied intelligence.
-    - name: Highlights
-      value: End-to-end, hands-on experience building a multi-view video world model on top of lingbot-world (a 14B, DiT-based, action-conditioned video diffusion model) on 16×H200 GPUs—owning the data-and-conditioning pipeline and the adapter/LoRA model-adaptation training within a collaborative research team.
+      value: Video World Models, World-Action Models, Interactive and Long-Horizon Video Generation, and Embodied AI.
+    - name: Profile
+      value: Third-year undergraduate at SCUT and research intern in Prof. Hao Tang's group at Peking University, working on map-conditioned multi-view interactive world modeling.
 
 - title: Education
   type: time_table
@@ -39,26 +39,22 @@
       institution: "Peking University, Beijing, China — Supervisor: Prof. Hao Tang"
       year: Feb 2026 - Present
       description:
-        - "Research Topic: Multi-view first-person video world models—building on lingbot-world (a 14B, DiT-based, action-conditioned video diffusion model) with an explicit Map Memory spatial condition to generate cross-view-consistent Counter-Strike gameplay."
-        - "Data pipeline: Built and scaled the end-to-end data pipeline that transforms raw gameplay recordings into the model's Map Memory conditioning signals."
-        - "Model training: Implemented and trained the model-adaptation stack—a residual conditioning adapter that injects the Map Memory signal into the DiT backbone, together with LoRA fine-tuning—realizing an explicitly map-grounded approach to multi-view-consistent world modeling."
-        - "Literature & direction: Surveyed multi-view generation approaches (MultiGen, Multiworld, Gamma-world, MIRA) to inform the project's technical direction."
+        - "Co-developed a multi-view first-person interactive world model for highly dynamic CS:GO scenes by adapting LingBot-World, a 14B action-conditioned video DiT; achieved synchronized views with cross-view consistency, a stable world state, complex action-conditioned interaction, and long-horizon generation."
+        - "Designed and trained a residual Map Memory conditioning adapter with LoRA for the 14B model; ran and debugged distributed experiments on a 16× NVIDIA H200 GPU cluster, diagnosing failures across the data, training, and systems stack."
+        - "Built the end-to-end data and evaluation pipeline from raw gameplay recordings to synchronized multi-view clips and Map Memory conditions, covering spatial grounding, cross-view consistency, world stability, and long-horizon behavior."
 
 - title: Technical Skills
   type: nested_list
   contents:
     - title: Programming
       items:
-        - Python, PyTorch
-    - title: Video World Models
+        - Python, PyTorch, C++
+    - title: Generative and World Models
       items:
-        - DiT-based action-conditioned video diffusion, LoRA fine-tuning, lingbot-world model family
-    - title: Infrastructure
+        - Diffusion Transformers (DiT), action-conditioned video generation, multi-view world modeling, conditioning adapters, LoRA fine-tuning
+    - title: Research Engineering
       items:
-        - "Multi-GPU server operation (16×H200), Linux, SSH, tmux, Git, HuggingFace"
-    - title: AI-Assisted Development
-      items:
-        - Claude Code / Codex for accelerating prototyping
+        - "Distributed multi-GPU training, data pipelines, Linux, SSH, tmux, Git, Hugging Face"
 
 - title: Honors and Awards
   type: time_table
