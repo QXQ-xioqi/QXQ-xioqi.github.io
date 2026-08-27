@@ -2,7 +2,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.home_nav %}
-        <a class="navbar-brand title home-brand" href="#bio">Xiaoqi Qin</a>
+        <a class="navbar-brand title home-brand home-section-link" href="#bio">Xiaoqi Qin</a>
       {% elsif page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
@@ -37,12 +37,12 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% if page.home_nav %}
-            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#honors">Honors</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#bio">Bio</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link home-section-link" href="#honors">Honors</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ '/cv/' | relative_url }}">CV</a></li>
           {% else %}
             {% for site_page in site.pages %}
@@ -142,5 +142,20 @@
     <progress id="progress" value="0">
       <div class="progress-container"><span class="progress-bar"></span></div>
     </progress>
+  {% endif %}
+  {% if page.home_nav %}
+    <script>
+      document.addEventListener('click', (event) => {
+        const sectionLink = event.target.closest('.home-section-link');
+        const navbarMenu = document.getElementById('navbarNav');
+        const navbarToggle = document.querySelector('[aria-controls="navbarNav"]');
+
+        if (!sectionLink || !navbarMenu?.classList.contains('show')) return;
+
+        navbarMenu.classList.remove('show');
+        navbarToggle?.classList.add('collapsed');
+        navbarToggle?.setAttribute('aria-expanded', 'false');
+      });
+    </script>
   {% endif %}
 </header>
