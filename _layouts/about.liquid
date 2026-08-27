@@ -94,31 +94,57 @@ layout: default
     </article>
   </section>
 
-  <section id="background" class="academic-section" aria-labelledby="background-title">
-    <h2 id="background-title">Background</h2>
-    <div class="background-groups">
-      <section class="background-group" aria-labelledby="experience-title">
-        <h3 id="experience-title">Experience</h3>
-        <article class="background-item">
+  <section id="experience" class="academic-section" aria-labelledby="experience-title">
+    <h2 id="experience-title">Experience</h2>
+    <article class="resume-entry">
+      <header class="resume-entry-heading">
+        <div>
+          <h3>Peking University</h3>
+          <p>Research Intern · Advised by <a href="https://ha0tang.github.io/">Prof. Hao Tang</a></p>
+        </div>
+        <div class="resume-entry-meta">
           <time>Feb 2026 — Present</time>
-          <div>
-            <h4>Research Intern, Peking University</h4>
-            <p>Video world models, Map Memory, and multi-view interactive generation in Prof. Hao Tang's group.</p>
-          </div>
-        </article>
-      </section>
+          <span>Beijing, China</span>
+        </div>
+      </header>
+      <h4>
+        <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Map-Conditioned Multi-View Interactive World Modeling</a>
+      </h4>
+      <ul class="experience-highlights">
+        <li>
+          Co-developed a multi-view first-person interactive world model for highly dynamic CS:GO scenes by adapting <em>LingBot-World</em>, a 14B
+          action-conditioned video DiT.
+        </li>
+        <li>
+          Designed and trained a residual Map Memory conditioning adapter with LoRA; ran and debugged distributed experiments on a 16× NVIDIA H200 GPU
+          cluster.
+        </li>
+        <li>
+          Built the end-to-end data and evaluation pipeline for spatial grounding, cross-view consistency, world stability, and long-horizon behavior.
+        </li>
+      </ul>
+    </article>
+  </section>
 
-      <section class="background-group" aria-labelledby="education-title">
-        <h3 id="education-title">Education</h3>
-        <article class="background-item">
-          <time>Sep 2024 — Jun 2028</time>
-          <div>
-            <h4>B.Eng. in Mechatronics Engineering, SCUT</h4>
-            <p>GPA 3.90/4.00 · IELTS 7.5</p>
-          </div>
-        </article>
-      </section>
-    </div>
+  <section id="education" class="academic-section" aria-labelledby="education-title">
+    <h2 id="education-title">Education</h2>
+    <article class="resume-entry education-entry">
+      <header class="resume-entry-heading">
+        <div>
+          <h3>South China University of Technology</h3>
+          <p>B.Eng. in Mechatronics Engineering</p>
+        </div>
+        <div class="resume-entry-meta">
+          <time>Sep 2024 — Jun 2028 (Expected)</time>
+          <span>Guangzhou, China</span>
+        </div>
+      </header>
+      <p><strong>GPA:</strong> 3.90/4.00 <span class="detail-separator">·</span> <strong>IELTS:</strong> 7.5</p>
+      <p class="coursework">
+        <strong>Selected coursework:</strong> C++ Programming (100), Probability &amp; Statistics (99), Linear Algebra (97), Calculus I/II (96/96),
+        Introduction to AI (93), Theoretical Mechanics (95), and Electric Circuits (90).
+      </p>
+    </article>
   </section>
 
   <section id="honors" class="academic-section" aria-labelledby="honors-title">

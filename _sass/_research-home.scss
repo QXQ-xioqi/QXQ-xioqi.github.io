@@ -259,37 +259,25 @@ html[data-theme="dark"] .academic-home {
   font-size: 0.88rem;
 }
 
-.background-groups {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.25rem;
+.resume-entry {
   max-width: 49rem;
-}
 
-.background-group {
-  > h3 {
-    margin: 0 0 0.65rem;
-    padding-bottom: 0.35rem;
-    border-bottom: 1px solid var(--academic-border);
+  > h4 {
+    margin: 0.65rem 0 0.35rem;
     font-size: 1rem;
     font-weight: 650;
   }
 }
 
-.background-item {
-  padding: 0.1rem 0 0.35rem;
+.resume-entry-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: start;
 
-  time {
-    display: block;
-    margin-bottom: 0.2rem;
-    color: var(--academic-muted);
-    font-size: 0.85rem;
-    white-space: nowrap;
-  }
-
-  h4 {
+  h3 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 650;
   }
 
@@ -297,6 +285,40 @@ html[data-theme="dark"] .academic-home {
     margin: 0.1rem 0 0;
     color: var(--academic-muted);
   }
+}
+
+.resume-entry-meta {
+  display: flex;
+  flex-direction: column;
+  color: var(--academic-muted);
+  font-size: 0.85rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.experience-highlights {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.education-entry {
+  > p {
+    margin: 0.55rem 0 0;
+  }
+
+  .coursework {
+    max-width: 48rem;
+    color: var(--academic-muted);
+  }
+}
+
+.detail-separator {
+  margin: 0 0.35rem;
+  color: var(--academic-muted);
 }
 
 .honor-item {
@@ -359,11 +381,6 @@ html[data-theme="dark"] .academic-home {
   .mini-view {
     min-height: 4.25rem;
   }
-
-  .background-groups {
-    grid-template-columns: 1fr;
-    gap: 1.15rem;
-  }
 }
 
 @media (max-width: 560px) {
@@ -373,6 +390,15 @@ html[data-theme="dark"] .academic-home {
 
   .project-thumbnail {
     width: min(14rem, 100%);
+  }
+
+  .resume-entry-heading {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .resume-entry-meta {
+    text-align: left;
   }
 
   .compact-list li,
