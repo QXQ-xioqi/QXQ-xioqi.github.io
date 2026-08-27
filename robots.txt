@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://QXQ-xioqi.github.io/sitemap.xml
+Sitemap: https://qxq-xioqi.github.io/sitemap.xml
