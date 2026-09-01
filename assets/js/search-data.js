@@ -404,7 +404,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-map-conditioned-multi-view-interactive-world-modeling",
           title: 'Map-Conditioned Multi-View Interactive World Modeling',
-          description: "Action-conditioned multi-view first-person world modeling for highly dynamic interactive environments (ongoing).",
+          description: "Action-conditioned multi-view first-person world modeling for highly dynamic interactive environments, in ongoing industry collaboration with YAHAHA.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/multi-view-interactive-world-model/";
             },},{id: "teachings-data-science-fundamentals",
