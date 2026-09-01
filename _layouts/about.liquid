@@ -61,10 +61,13 @@ layout: default
         <h3>
           <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Map-Conditioned Multi-View Interactive World Modeling</a>
         </h3>
-        <p class="project-meta">Peking University · Prof. Hao Tang's Group · Ongoing</p>
+        <p class="project-meta">
+          Peking University · Prof. Hao Tang's Group · Ongoing industry collaboration with <a href="https://yahaha.com/">YAHAHA</a>
+        </p>
         <p>
-          We adapt <em>LingBot-World</em>, a 14B action-conditioned video Diffusion Transformer, to highly dynamic CS:GO scenes. Our system targets
-          synchronized viewpoints, a stable shared world, complex interaction, and long-horizon generation.
+          We adapt <em>LingBot-World</em>, a 14B action-conditioned video Diffusion Transformer, to highly dynamic CS:GO scenes. Our system enables
+          synchronized generation across viewpoints, cross-view consistency, a persistent shared world state, complex action-conditioned interaction,
+          and long-horizon rollouts.
         </p>
         <p>
           I designed a residual Map Memory adapter with LoRA, built the synchronized multi-view data and evaluation pipeline, and trained and debugged
@@ -100,7 +103,8 @@ layout: default
       <ul class="experience-highlights">
         <li>
           Co-developed a multi-view first-person interactive world model for highly dynamic CS:GO scenes by adapting <em>LingBot-World</em>, a 14B
-          action-conditioned video DiT.
+          action-conditioned video DiT; enabled synchronized generation across viewpoints, cross-view consistency, a persistent world state, complex
+          action-conditioned interaction, and long-horizon rollouts.
         </li>
         <li>
           Designed and trained a residual Map Memory conditioning adapter with LoRA; ran and debugged distributed experiments on a 16× NVIDIA H200 GPU

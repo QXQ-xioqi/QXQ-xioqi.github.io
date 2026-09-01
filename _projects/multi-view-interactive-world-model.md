@@ -2,12 +2,12 @@
 layout: page
 title: Map-Conditioned Multi-View Interactive World Modeling
 permalink: /projects/multi-view-interactive-world-model/
-description: Action-conditioned multi-view first-person world modeling for highly dynamic interactive environments (ongoing).
+description: Action-conditioned multi-view first-person world modeling for highly dynamic interactive environments, in ongoing industry collaboration with YAHAHA.
 importance: 1
 category: research
 ---
 
-**Ongoing collaborative research · Peking University · Advised by [Prof. Hao Tang](https://ha0tang.github.io/)**
+**Ongoing industry collaboration with [YAHAHA](https://yahaha.com/) · Peking University · Advised by [Prof. Hao Tang](https://ha0tang.github.io/)**
 
 We study how to extend a large action-conditioned video model into a coherent, interactive multi-view world model. Built on _LingBot-World_, a 14B video Diffusion Transformer, the system generates synchronized first-person viewpoints in CS:GO, where rapid camera motion, abrupt scene changes, and complex interactions make long-horizon prediction especially challenging.
 
